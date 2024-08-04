@@ -90,26 +90,24 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(2,0,36);
+    /* background: rgb(2,0,36); */
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 header {
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
     background-color: black;
-    color: white;
-    text-align: center;
+    text-align:center;
     padding: 0px;
-    z-index: 1000
    
 }
 
 header nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    /* text-align: center; */
     
 }
 
@@ -123,27 +121,39 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    transition: background-color 0.3s;
 }
 
 header nav ul li a:hover {
-    background-color: black;
+    color: red;
     border-radius: 5px;
+    font-size: larger;
 }
 
 section {
     padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 30px auto;
+    max-width: 900px;
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
 }
 
-.container {
+/* .container {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
+} */
+
+.container a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+}
+
+.container a:hover {
+    color: #0056b3;
 }
 
 h1 {
@@ -179,21 +189,56 @@ ul {
    
 }
 
+.contact-info{
+    padding-top:10px;
+}
+
+.contact-info p{
+    text-align: center;
+    display: inline;
+    font-weight: bold;
+    margin: 10px;
+}
+.contact-info a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-info a:hover {
+    color:  rgb(55, 46, 218);
+}
+
+ .project ul li p{
+    font-weight: bold;
+ }
+
+
 .project-photo {
     width: 100%;
     height: auto;
     margin: 20px 0;
 }
 
-.contact-info a {
+.social-media{
+    padding-top: 20px;
+}
+
+.social-media p{
+    padding: 5px ;
+    margin: 0;
+ 
+}
+
+.social-media a {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+
 }
 
-.contact-info a:hover {
-    color: darkblue;
+.social-media a:hover{
+    color: rgb(55, 46, 218);
+
 }
 
 /* Contact Form */
@@ -223,7 +268,6 @@ ul {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 #contact-form button:hover {
@@ -232,6 +276,9 @@ ul {
 
 #introduction{
     text-align: center;
+}
+#introduction p{
+    font-size:x-large;
 }
 
 /* Responsive Design */
