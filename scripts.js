@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
   const contactForm = document.getElementById('contact-form');
-  
+  const menuIcon = document.getElementById("menu-icon");
+  const navLinks = document.getElementById("nav-links");
+
   if (contactForm) {
       contactForm.addEventListener('submit', function(event) {
           event.preventDefault();
@@ -8,5 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
           this.reset();
       });
   }
+
+  if (menuIcon) {
+      menuIcon.addEventListener("click", function() {
+          navLinks.classList.toggle("active");
+      });
+  }
 });
+
 
