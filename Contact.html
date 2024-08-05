@@ -18,17 +18,18 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Resume.html">Resume</a></li>
                 <!-- <li><a href="blog.html">Blog</a></li> -->
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <section id="contact">
         <h1>Contact Me</h1>
-        <form id="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <input type="hidden" name="access_key" value="3a853d5e-988a-4001-b88a-53a55d7c553e">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
