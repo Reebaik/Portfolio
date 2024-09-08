@@ -52,14 +52,27 @@ section {
     border-radius: 10%;
 }
 
-/* .container {
+.container {
     width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+    padding: 0 50px;
+    margin: 0px auto;
     box-sizing: border-box;
-} */
+}
+.container button{
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+    border-radius: 10px;
+    background-color: orangered;
+    font-family:'Times New Roman', Times, serif;
+}
+.container button:hover{
+   color: #0056b3;
+}
 
-.container a{
+/* .container a{
     text-decoration: none;
     font-weight: bold;
     font-size: x-large;
@@ -68,7 +81,7 @@ section {
 
 .container a:hover {
     color: #0056b3;
-}
+} */
 
 h1 {
     color: black;

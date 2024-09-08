@@ -31,9 +31,14 @@
 
             <!-- <embed src="Images/Professional CV Resume.pdf" width="100%" height="1200px"> -->
             <img src="Images/Professional CV Resume img.png" width="100%" height="900px">
-            <a href="Images/Professional CV Resume.pdf" download>Download Resume</a>
+         <button onclick="downloadResume()">Download Resume</button>
             
     </div>
+    <script>
+        function downloadResume() {
+            window.location.href = 'Images/Professional CV Resume.pdf';
+        }
+    </script>
     </section>
 </body>
 </html>
